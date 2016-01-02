@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Interno</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="http://cdn.foundation5.zurb.com/foundation.css">
+
+
+
+    <!-- build:css css/app.css -->
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="states/app/layout.css">
+    <link rel="stylesheet" href="states/app/main-app/mainApp.css">
+    <!-- endbuild -->
+
+    <!-- Vendor -->
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/foundation-sites/dist/foundation.js"></script>
+<!--
+    <script src="../node_modules/foundation-icons/foundation-icons.css""></script>
+-->
+
+    <script src="../node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../node_modules/ngstorage/ngStorage.js"></script>
+    <script src="../node_modules/lodash/index.js"></script>
+
+    <!-- build:js js/app.js -->
+    <!------ App assets ------>
+    <script src="app.js"></script>
+
+    <!-- Components -->
+
+    <!-- States -->
+    <script src="states/pre-login/login/login.controller.js"></script>
+    <script src="states/pre-login/login/login.js"></script>
+
+
+    <script src="states/app/main-app/main.app.controller.js"></script>
+    <script src="states/app/main-app/mainApp.js"></script>
+
+    <script src="common/config/constant.js"></script>
+    <script src="common/config/config.js"></script>
+    <script src="states/app/layout.js"></script>
+    <!-- endbuild -->
+
+</head>
+<body ng-app="Interno">
+
+    <div class="index" ui-view></div>
+
+
+
+
+</body>
+</html>

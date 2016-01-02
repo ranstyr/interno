@@ -1,0 +1,31 @@
+.symbol-list {
+  list-style-type: none;
+  margin: 0; }
+  .symbol-list li .symbol {
+    background-color: white; }
+    .symbol-list li .symbol .name {
+      color: #428bca;
+      display: inline-block;
+      cursor: pointer; }
+    .symbol-list li .symbol button {
+      width: 5rem; }
+      .symbol-list li .symbol button.up {
+        border: 0.1rem solid #0f9d58; }
+      .symbol-list li .symbol button.down {
+        border: 0.1rem solid #db4437; }
+      .symbol-list li .symbol button .title {
+        font-size: 0.7rem;
+        color: #474a5b;
+        text-align: left; }
+        .symbol-list li .symbol button .title i, .symbol-list li .symbol button .title .text {
+          float: left; }
+      .symbol-list li .symbol button .pips {
+        font-size: 1rem;
+        color: #474a5b;
+        text-align: left;
+        clear: both;
+        overflow: hidden; }
+      .symbol-list li .symbol button .buy-sell-header {
+        text-align: left;
+        font-size: 0.7rem;
+        margin-left: -0.125rem; }

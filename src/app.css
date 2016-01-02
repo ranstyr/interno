@@ -1,0 +1,593 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+    font-family: sans-serif;
+    /* 1 */
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+    margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    /* 1 */
+    vertical-align: baseline;
+    /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+    display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+    background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+    margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+    overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+    margin: 0;
+    /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+    overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    /* 2 */
+    cursor: pointer;
+    /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+    line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+    border: 0;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+    overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+    font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+/**
+ *   Exports
+ *   Outputs the chunk of content passed if component $name hasn't yet been output.
+ *   This prevents code duplication by keeping track of which components have already been output.
+ *
+ *   @param {string} $name - Name of component to output
+ *
+ *   @output The content passed, if the component has not yet been referenced.
+ */
+/**
+ *
+ *   Map Serialize
+ *   Convert a map to JSON. Don't you even try to get fancy with this just yet.
+ *
+ *   @param {map} $map - Map to convert.
+ *
+ *   @return A string with a map converted to JSON.
+ */
+/**
+ *   Map Next
+ *   Find the next key in a map.
+ *
+ *   @param {map} $map - Map to traverse.
+ *   @param {mixed} $key - Key to use as a starting point.
+ *
+ *   @return The value for the key after $key if $key was found. If $key was not found, or $key was
+ *     the last value in the map, returns null.
+ */
+/**
+ *   Is It Light?
+ *   Checks the lightness of $color, and if it passes the $threshold of lightness, it returns the $yes color.
+ *   Otherwise, it returns the $no color. Use this function to dynamically output a foreground color based on
+ *   a given background color.
+ *
+ *   @param {color} $color - Color to check the lightness of.
+ *   @param {color} $yes - Color to return if $color is light.
+ *   @param {color} $no - Color to return if $color is dark.
+ *   @param {percentage} $threshold - Threshold of lightness to check against.
+ *
+ *   @return The $yes color or $no color.
+ */
+/**
+ *   Smart Scale
+ *   Scales a color to be lighter if it's light, or darker if it's dark.
+ *   Use this function to "fade" a color appropriate to its lightness.
+ *
+ *   @param {color} $color - Color to scale.
+ *   @param {percentage} $scale - Amount to scale up or down.
+ *   @param {percentage} $threshold - Threshold of lightness to check against.
+ *
+ *   @return A scaled color.
+ */
+/**
+ *   Has Value
+ *   Returns true if a value is not 0, null, or none.
+ *   Use this function to check for values like border: 0 or box-shadow: none.
+ *
+ *   @param $val - Value to check.
+ *
+ *   @return True if $val is not 0, null, or none.
+ */
+/**
+ *   Get Side
+ *   Determine a top/right/bottom/right value on a padding, margin, etc. property, no matter how many values were passed in.
+ *   Use this function if you need to know the specific side of a value, but don't know if the value is using shorthand.
+ *
+ *   @param {list|number} $val - Value to analyze. Should be a shorthand sizing property, e.g. "1em 2em 1em"
+ *   @param {keyword} $side - Side to return. Should be top, right, bottom, or left.
+ *
+ *   @return A single value based on $val and $side.
+ */
+/**
+ *   Get Border Value
+ *   Given border $val, find a specific element of the border, which is $elem.
+ *   Possible values for $elem are width, style, and color.
+ *
+ *   @param {list} $val - Border value to find a value in.
+ *   @param {keyword} $elem - Border component to extract.
+ *
+ *   @param If the value exists, returns the value. If the value is not in the border definition,
+ *     the function will return a 0px width, solid style, or black border.
+ */
+/**
+ *   Get Shadow Value
+ *   Given shadow value $val, find a specific element of the shadow, which is $elem.
+ *   Possible values for $elem are x, y, size, spread, color, and offset.
+ *
+ *   @param {list} $val - Shadow value to find a value in.
+ *   @param {keyword} $elem - Shadow component to extract.
+ *
+ *   @return If the value exists, returns the value. If the value is not set, returns false.
+ *     If $elem is "inset", returns true, otherwise false.
+**/
+/**
+ *   Strip Unit
+ *   Removes the unit (e.g. px, em, rem) from a value, returning the number only.
+ *
+ *   @param {number} $num - Number to strip unit from.
+ *
+ *   @return The same number, sans unit.
+ */
+/*
+  BREAKPOINTS
+  -----------
+
+  Foundation for Apps has three core breakpoints: small (> 0), medium (>= 640), and large (>= 1024).
+  There are two additional breakpoints, xlarge, and xxlarge, which (by default) do not
+  output as sizing classes.
+
+  Access named breakpoints using the mixin breakpoint($size), where $size is a breakpoint value.
+  You can also pass an em, rem, or pixel value into this mixin to generate an em-based media
+  query.
+
+  Create new named breakpoints using the $breakpoints map. Change which named breakpoints get
+  their own classes by modifying the $breakpoint-classes map.
+
+  NOTE: If you change the $breakpoints map, know that all values must be ordered by width, smallest
+  width first. So 0 is always your first value.
+*/
+/*
+  Breakpoint
+  Wraps a media query around the content you put inside the mixin. This mixin accepts
+  a number of values:
+   - If a string is passed, the mixin will look for it in the $breakpoints map, and use
+     a media query there.
+   - If a pixel value is passed, it will be converted to an em value using $rem-base.
+   - If a rem value is passed, the unit will be changed to em.
+   - If an em value is passed, the value will be used as-is.
+*/
+/*
+  Each Breakpoint
+  Prefixes selector $class with breakpoint keywords, allowing you to create a batch of
+  breakpoint classes with one chunk of code. If you want to skip a breakpoint (like small,
+  because mobile first and all that), add values to the $omit parameter.
+
+  $class - Class to prefix with the breakpoint name and a hyphen.
+  $omit - Named breakpoints to skip. No class will be added with breakpoints in this list.
+*/
+/*
+  CSS Output
+*/
+meta.foundation-version {
+    font-family: "0.0.1";
+}
+
+meta.foundation-mq {
+    font-family: '{"small": "0", "medium": "40rem", "large": "75rem", "xlarge": "90rem", "xxlarge": "120rem"}';
+}
+
+/*
+  Legacy variables
+  Need to convert all references to a newer style eventually
+*/
+/*
+  GLOBAL
+  ------
+
+  Global styles and settings for Foundation for Apps are stored here. This file must always
+  be imported, no matter what.
+
+  Includes:
+   -
+*/
+html, body {
+    height: 100%;
+    font-size: 100%;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #fff;
+    color: #222;
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+    display: inline-block;
+    vertical-align: middle;
+}

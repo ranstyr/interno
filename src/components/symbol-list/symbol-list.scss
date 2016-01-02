@@ -1,0 +1,63 @@
+//@import "../../assets/scss/settings";
+
+.symbol-list {
+  list-style-type: none;
+  margin: 0;
+
+  li {
+
+    .symbol {
+      background-color: white;
+
+      .name {
+        color: #428bca;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      button {
+
+        &.up { border: 0.1rem solid #0f9d58; }
+        &.down { border: 0.1rem solid #db4437; }
+
+        width: 5rem;
+
+        .title {
+          font-size: 0.7rem;
+          color: #474a5b;
+          text-align: left;
+
+          i, .text {
+            float: left;
+          }
+
+        }
+
+        .pips {
+          font-size: 1rem;
+          color: #474a5b;
+          text-align: left;
+          clear: both;
+          overflow: hidden;
+        }
+
+        .buy-sell-header {
+          text-align: left;
+          font-size: 0.7rem;
+          margin-left: -0.125rem;
+        }
+
+      }
+
+    }
+
+    a {
+      //&.active, &:hover {
+      //  background-color: #393B48;
+      //}
+      //color: #9DA1BC;
+    }
+
+  }
+
+}
